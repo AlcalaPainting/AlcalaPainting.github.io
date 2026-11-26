@@ -6,30 +6,44 @@
   <meta name="description" content="Alcala Painting offers interior and exterior painting, repairs, and remodeling in Chicago and the suburbs.">
   <meta name="theme-color" content="#ffffff">
   <title>Alcala Painting</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="paint.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <nav class="site-nav frame" aria-label="Main navigation">
-      <div class="nav-group">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="our-work.html">Our Work</a>
-      </div>
-      <a href="request-estimate.html" class="estimate-link">Request Estimate</a>
-    </nav>
+    <div class="header-content frame">
+      <a class="wordmark header-logo" href="index.html"><span class="brand-mark" aria-hidden="true"></span> Alcala Painting</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-group">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="our-work.html">Our Work</a>
+        </div>
+        <a href="request-estimate.html" class="estimate-link">Request Estimate</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero frame" aria-labelledby="brand-title">
-      <div class="hero-panel">
-        <div class="hero-shapes" aria-hidden="true">
-          <span class="hero-arch"></span>
-          <span class="hero-round"></span>
-          <span class="hero-gable"></span>
+    <section class="hero" aria-labelledby="brand-title">
+      <div class="hero-content frame">
+        <div class="hero-copy">
+          <h1 id="brand-title">Alcala <span>Painting</span></h1>
+          <p>Serving Chicago and the suburbs</p>
         </div>
-        <h1 id="brand-title">Alcala <span>Painting</span></h1>
-        <p>Serving Chicago and the suburbs</p>
+        <svg class="hero-brush" viewBox="0 0 380 440" aria-hidden="true" focusable="false">
+          <ellipse cx="193" cy="218" rx="175" ry="194" fill="#e8e7dc"/>
+          <g transform="rotate(15 190 220)">
+            <path d="M144 207h92l-10 157a36 36 0 0 1-72 0z" fill="#a56250"/>
+            <circle cx="190" cy="360" r="8" fill="#f4f0e6"/>
+            <path d="M68 59h244v119a18 18 0 0 1-18 18H86a18 18 0 0 1-18-18z" fill="#e8d5ad"/>
+            <path d="M68 59h244v64c0 12-10 22-22 22-14 0-20-10-26-19-6-8-11-14-22-14-13 0-20 10-28 21-8 11-17 23-36 23-22 0-31-12-42-26-8-11-16-21-31-21-14 0-25 7-37 15z" fill="#527e83"/>
+            <path d="M125 160v25m61-17v17m68-29v29" fill="none" stroke="#a58758" stroke-opacity=".45" stroke-width="2" stroke-linecap="round"/>
+            <rect x="62" y="185" width="256" height="51" rx="12" fill="#ad936a"/>
+            <path d="M78 195h224" fill="none" stroke="#f8e8c6" stroke-opacity=".76" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="97" cy="214" r="4.5" fill="#695b45"/>
+            <circle cx="283" cy="214" r="4.5" fill="#695b45"/>
+          </g>
+        </svg>
       </div>
     </section>
 
