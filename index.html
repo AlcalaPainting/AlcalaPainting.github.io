@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try fresh paint colors on four geometric homes from Alcala Painting.">
+  <meta name="theme-color" content="#f7f2e8">
+  <title>Alcala Painting</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="paint.js" defer></script>
+</head>
+<body>
+  <header class="site-header frame">
+    <a href="./" class="wordmark"><span class="brand-mark" aria-hidden="true"></span> Alcala Painting</a>
+    <a class="header-link" href="#paint">Try the colors <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main>
+    <section class="intro frame">
+      <h1>A fresh coat<br>changes <em>everything.</em></h1>
+      <p>See what a little color can do.</p>
+      <a class="intro-link" href="#paint">Explore the neighborhood <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="neighborhood" id="paint" aria-labelledby="paint-title">
+      <div class="frame">
+        <div class="section-heading">
+          <div>
+            <h2 id="paint-title">Paint the neighborhood.</h2>
+            <p>Pick a building to change its colors and shapes.</p>
+          </div>
+          <button class="paint-all" type="button" disabled>Repaint all <span aria-hidden="true">↻</span></button>
+        </div>
+
+        <span id="repaint-label" class="visually-hidden">Repaint</span>
+        <div class="buildings">
+          <button class="building cottage" type="button" data-finish="0" aria-labelledby="repaint-label cottage-name" aria-describedby="cottage-finish" disabled>
+            <span class="stage" aria-hidden="true">
+              <span class="art">
+                <span class="wall"></span>
+                <span class="roof"></span>
+                <span class="roof-window"></span>
+                <span class="round-window"></span>
+                <span class="door"></span>
+              </span>
+            </span>
+            <span class="card-caption">
+              <span><strong id="cottage-name">The Cottage</strong><span class="finish" id="cottage-finish">Terracotta</span></span>
+              <span class="repaint-icon" aria-hidden="true">↻</span>
+            </span>
+          </button>
+
+          <button class="building apartments" type="button" data-finish="0" aria-labelledby="repaint-label apartments-name" aria-describedby="apartments-finish" disabled>
+            <span class="stage" aria-hidden="true">
+              <span class="art">
+                <span class="floor floor-top"><i></i><i></i></span>
+                <span class="floor floor-bottom"><i></i><i></i></span>
+              </span>
+            </span>
+            <span class="card-caption">
+              <span><strong id="apartments-name">The Apartments</strong><span class="finish" id="apartments-finish">Olive &amp; Cream</span></span>
+              <span class="repaint-icon" aria-hidden="true">↻</span>
+            </span>
+          </button>
+
+          <button class="building bungalow" type="button" data-finish="0" aria-labelledby="repaint-label bungalow-name" aria-describedby="bungalow-finish" disabled>
+            <span class="stage" aria-hidden="true">
+              <span class="art">
+                <span class="wall"></span>
+                <span class="roof"></span>
+                <span class="picture-window"></span>
+                <span class="door"></span>
+              </span>
+            </span>
+            <span class="card-caption">
+              <span><strong id="bungalow-name">The Bungalow</strong><span class="finish" id="bungalow-finish">Cornflower</span></span>
+              <span class="repaint-icon" aria-hidden="true">↻</span>
+            </span>
+          </button>
+
+          <button class="building townhouse" type="button" data-finish="0" aria-labelledby="repaint-label townhouse-name" aria-describedby="townhouse-finish" disabled>
+            <span class="stage" aria-hidden="true">
+              <span class="art">
+                <span class="wing"></span>
+                <span class="wall"></span>
+                <span class="roof"></span>
+                <span class="upper-window"></span>
+                <span class="lower-window"></span>
+                <span class="door"></span>
+              </span>
+            </span>
+            <span class="card-caption">
+              <span><strong id="townhouse-name">The Townhouse</strong><span class="finish" id="townhouse-finish">Marigold</span></span>
+              <span class="repaint-icon" aria-hidden="true">↻</span>
+            </span>
+          </button>
+        </div>
+        <p class="visually-hidden" role="status" id="paint-status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer frame">
+    <span class="wordmark"><span class="brand-mark" aria-hidden="true"></span> Alcala Painting</span>
+    <a class="header-link" href="#">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
