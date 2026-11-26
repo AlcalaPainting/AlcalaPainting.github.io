@@ -3,23 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Try fresh paint colors on four geometric homes from Alcala Painting.">
+  <meta name="description" content="Alcala Painting offers interior and exterior painting, repairs, and remodeling in Chicago and the suburbs.">
   <meta name="theme-color" content="#ffffff">
   <title>Alcala Painting</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script src="paint.js" defer></script>
 </head>
 <body>
-  <header class="site-header frame">
-    <a href="./" class="wordmark"><span class="brand-mark" aria-hidden="true"></span> Alcala Painting</a>
-    <a class="header-link" href="#paint">Try the colors <span aria-hidden="true">↓</span></a>
+  <header class="site-header">
+    <nav class="site-nav frame" aria-label="Main navigation">
+      <div class="nav-group">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="our-work.html">Our Work</a>
+      </div>
+      <a href="request-estimate.html" class="estimate-link">Request Estimate</a>
+    </nav>
   </header>
 
   <main>
-    <section class="intro frame">
-      <h1>A fresh coat changes <em>everything.</em></h1>
-      <p>See what a little color can do.</p>
-      <a class="intro-link" href="#paint">Explore the neighborhood <span aria-hidden="true">↓</span></a>
+    <section class="hero frame" aria-labelledby="brand-title">
+      <div class="hero-panel">
+        <div class="hero-shapes" aria-hidden="true">
+          <span class="hero-arch"></span>
+          <span class="hero-round"></span>
+          <span class="hero-gable"></span>
+        </div>
+        <h1 id="brand-title">Alcala <span>Painting</span></h1>
+        <p>Serving Chicago and the suburbs</p>
+      </div>
+    </section>
+
+    <section class="intro frame" aria-labelledby="services-title">
+      <div class="section-heading">
+        <h2 id="services-title">A fresh coat changes <em>everything.</em></h2>
+        <p>We paint interiors, exteriors, cabinets, and fences. We also install garage floor epoxy and handle repairs and remodeling.</p>
+      </div>
+      <div class="comparison" role="group" aria-label="Before and after project photos">
+        <figure>
+          <figcaption>Before</figcaption>
+          <div class="photo-placeholder" role="img" aria-label="Before photo placeholder"></div>
+        </figure>
+        <figure>
+          <figcaption>After</figcaption>
+          <div class="photo-placeholder" role="img" aria-label="After photo placeholder"></div>
+        </figure>
+      </div>
     </section>
 
     <section class="neighborhood" id="paint" aria-labelledby="paint-title">
@@ -53,11 +81,15 @@
         <p class="visually-hidden" role="status" id="paint-status"></p>
       </div>
     </section>
+    <section class="rating frame" aria-label="Google rating">
+      <p class="rating-stars" aria-hidden="true">★★★★★</p>
+      <p><strong>5.0 out of 5</strong> on Google</p>
+    </section>
   </main>
 
   <footer class="site-footer frame">
     <span class="wordmark"><span class="brand-mark" aria-hidden="true"></span> Alcala Painting</span>
-    <a class="header-link" href="#">Back to top <span aria-hidden="true">↑</span></a>
+    <a href="tel:+17733969417">(773) 396-9417</a>
   </footer>
 </body>
 </html>
