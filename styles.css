@@ -139,6 +139,8 @@ button:enabled { cursor: pointer; }
 }
 
 .building {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   overflow: hidden;
   padding: 0;
@@ -147,10 +149,12 @@ button:enabled { cursor: pointer; }
   background: var(--paper);
   color: var(--ink);
   text-align: left;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .stage {
   position: relative;
+  width: 100%;
   display: grid;
   place-items: end center;
   aspect-ratio: 1.12;
@@ -345,6 +349,8 @@ button:enabled { cursor: pointer; }
 
 .card-caption {
   display: flex;
+  flex: 1;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   gap: .4rem;
@@ -376,7 +382,7 @@ button:enabled { cursor: pointer; }
   transition: background-color .2s ease, color .2s ease;
 }
 
-.building:is(:hover, :focus-visible):enabled .repaint-icon {
+.building:is(:hover, :focus-visible, :active):enabled .repaint-icon {
   background: var(--ink);
   color: var(--paper);
 }
